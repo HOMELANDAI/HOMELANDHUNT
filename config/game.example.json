@@ -1,0 +1,32 @@
+{
+  "brand": "HomelandAI",
+  "game": "Homeland Hunt",
+  "event": {
+    "cadence": "monthly",
+    "entryTiersUsd": [19.99, 29.99, 49.99],
+    "specialMonths": [2, 12],
+    "legacyEarlyBirdUsd": 99.99
+  },
+  "qualification": {
+    "level1EntriesRequired": 10,
+    "level2EntriesRequired": 7,
+    "level3EntriesRequired": 4,
+    "seasonContests": 12,
+    "tieBreakers": ["loyalty", "leaderboard"]
+  },
+  "objects": {
+    "shield": {"archetype": "guardian", "canonicalEffect": "TBD"},
+    "helmet": {"archetype": "analyst", "canonicalEffect": "TBD"},
+    "anchor": {"archetype": "pathfinder", "canonicalEffect": "TBD"},
+    "timepiece": {"archetype": "strategist", "canonicalEffect": "TBD"}
+  },
+  "backend": {
+    "provider": "supabase",
+    "services": ["database", "auth", "edge-functions", "realtime", "storage"]
+  },
+  "broadcast": ["twitch", "maestro.tv"],
+  "xr": {
+    "requiredForMvp": false,
+    "futureSpatialClient": true
+  }
+}
